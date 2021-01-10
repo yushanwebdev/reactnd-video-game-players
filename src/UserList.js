@@ -24,8 +24,8 @@ class UserList extends Component {
                     {
                         users.map(user => (
                             this.state.showCount ? 
-                            <UserItem key={user.id} username={user.username} count={user.count} /> 
-                            : <UserItem key={user.id} username={user.username} count='*' />
+                            <UserItem key={user.username} username={user.username} count={user.count} /> 
+                            : <UserItem key={user.username} username={user.username} count='*' />
                         ))
                     }
                 </ol>
