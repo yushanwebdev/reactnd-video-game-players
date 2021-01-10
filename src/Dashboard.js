@@ -2,7 +2,7 @@ import { Component } from "react";
 import AddUser from "./AddUser";
 import UserList from "./UserList";
 
-class UserDetails extends Component {
+class Dashboard extends Component {
     state = {
         users: []
     }
@@ -42,7 +42,7 @@ class UserDetails extends Component {
 
     render() {
         return (
-            <div className="user-details">
+            <div className="dashboard">
                 <AddUser updateUsersList={this.updateUsersList} checkUserNameExists={this.checkUserNameExists} />
                 <UserList users={this.state.users} />
             </div>
@@ -50,4 +50,4 @@ class UserDetails extends Component {
     }
 }
 
-export default UserDetails;
+export default Dashboard;
