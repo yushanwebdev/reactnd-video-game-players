@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class AddUser extends Component {
     state = {
@@ -96,6 +97,11 @@ class AddUser extends Component {
             </form>
         )
     }
+}
+
+AddUser.PropTypes = {
+    updateUsersList: PropTypes.func.isRequired,
+    checkUserNameExists: PropTypes.func.isRequired
 }
 
 export default AddUser;
