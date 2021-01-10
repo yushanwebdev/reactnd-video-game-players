@@ -42,13 +42,20 @@
 
 .dashboard {
   padding-top: 50px;
-  max-width: 278px;
+  max-width: 345px;
   margin: 0 auto;
   padding-bottom: 50px;
 }
 
 .form-control {
   margin-bottom: 25px;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 21px 25px;
+  border-radius: 8px;
 }
 
 label {
