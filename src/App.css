@@ -1,9 +1,5 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
+  height: 75px;
   pointer-events: none;
 }
 
@@ -24,6 +20,12 @@
   color: white;
 }
 
+.App-title {
+  font-size: 35px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +37,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.user-details {
+  padding-top: 50px;
+  max-width: 278px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.form-control {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 9px;
+}
+
+input {
+  border-radius: 2px;
+  border: 1px solid #ced4da;
+  height: 28px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+button[disabled] {
+  opacity: 0.65;
+}
+
+h2 {
+  text-align: center;
+}
+
+ol {
+  margin-bottom: 45px;
+  padding-left: 15px;
 }
