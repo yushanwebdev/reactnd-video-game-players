@@ -5,7 +5,6 @@ const UserItem = props => {
 }
 
 UserItem.propTypes = {
-    key: PropTypes.number.isRequired,
     username: PropTypes.string.isRequired,
     count: PropTypes.number.isRequired
 }
