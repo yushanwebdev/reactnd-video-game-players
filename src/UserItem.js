@@ -4,10 +4,10 @@ const UserItem = props => {
     return <li>{`${props.username} played ${props.count} games.`}</li>;
 }
 
-UserItem.PropTypes = {
+UserItem.propTypes = {
     key: PropTypes.number.isRequired,
     username: PropTypes.string.isRequired,
-    count: PropTypes.count.isRequired
+    count: PropTypes.number.isRequired
 }
 
 export default UserItem;
