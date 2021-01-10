@@ -1,4 +1,5 @@
 import { Component } from "react";
+import PropTypes from 'prop-types';
 import CountVisibilityBtn from "./CountVisibilityBtn";
 import UserItem from "./UserItem";
 
@@ -36,6 +37,10 @@ class UserList extends Component {
             </div>
         )
     }
+}
+
+UserList.PropTypes = {
+    users: PropTypes.array.isRequired
 }
 
 export default UserList;
