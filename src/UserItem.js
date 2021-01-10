@@ -6,7 +6,7 @@ const UserItem = props => {
 
 UserItem.propTypes = {
     username: PropTypes.string.isRequired,
-    count: PropTypes.number.isRequired
+    count: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf(['*'])]).isRequired
 }
 
 export default UserItem;
