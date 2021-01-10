@@ -22,12 +22,16 @@ class UserList extends Component {
                 <ol>
                     {
                         users.map(user => (
-                            this.state.showCount ? <UserItem key={user.id} username={user.username} count={user.count} /> : <UserItem key={user.id} username={user.username} count='*' />
+                            this.state.showCount ? 
+                            <UserItem key={user.id} username={user.username} count={user.count} /> 
+                            : <UserItem key={user.id} username={user.username} count='*' />
                         ))
                     }
                 </ol>
                 {
-                    users.length ? <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} /> : ''
+                    users.length ? 
+                    <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} /> 
+                    : ''
                 }
             </div>
         )
