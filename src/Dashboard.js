@@ -9,8 +9,8 @@ class Dashboard extends Component {
 
     updateUsersList = (user) => {
         user.count = 0;
-        this.setState(currState => ({
-            users: [...currState.users, user],
+        this.setState(prevState => ({
+            users: [...prevState.users, user],
         }));
     }
 
