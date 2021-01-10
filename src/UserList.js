@@ -31,15 +31,15 @@ class UserList extends Component {
                 </ol>
                 {
                     users.length ? 
-                    <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} /> 
-                    : ''
+                    '' 
+                    : <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} />
                 }
             </div>
         )
     }
 }
 
-UserList.PropTypes = {
+UserList.propTypes = {
     users: PropTypes.array.isRequired
 }
 

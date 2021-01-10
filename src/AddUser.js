@@ -99,7 +99,7 @@ class AddUser extends Component {
     }
 }
 
-AddUser.PropTypes = {
+AddUser.propTypes = {
     updateUsersList: PropTypes.func.isRequired,
     checkUserNameExists: PropTypes.func.isRequired
 }
