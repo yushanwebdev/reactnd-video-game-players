@@ -34,7 +34,8 @@ class AddUser extends Component {
             this.setState(prevState => ({
                 first: '',
                 last: '',
-                username: ''
+                username: '',
+                userExists: false
             }));
         } else {
             this.setState(prevState => ({
