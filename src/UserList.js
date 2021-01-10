@@ -15,17 +15,20 @@ class UserList extends Component {
     }
 
     render() {
+        const { users } = this.props;
         return (
             <div>
                 <h2>Users</h2>
                 <ol>
                     {
-                        this.props.users.map(user => (
-                            this.state.showCount ? <UserItem key={user.id} username={user.username} count={user.count} /> : <UserItem key={user.id} username={user.username} count='\*' />
+                        users.map(user => (
+                            this.state.showCount ? <UserItem key={user.id} username={user.username} count={user.count} /> : <UserItem key={user.id} username={user.username} count='*' />
                         ))
                     }
                 </ol>
-                <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} />
+                {
+                    users.length ? <CountVisibilityBtn showCount={this.state.showCount}  changeCountVisiblity={this.changeCountVisiblity} /> : ''
+                }
             </div>
         )
     }
