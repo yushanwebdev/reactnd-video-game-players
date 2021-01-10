@@ -7,38 +7,18 @@ class Dashboard extends Component {
         users: []
     }
 
-    updateUsersList = ({ first, last, username }) => {
-        this.setState(prevState => {
-            const length = prevState.users.length;
-            return length !== 0 ?
-                {
-                    users: prevState.users.concat({
-                        id: length+1,
-                        first: first,
-                        last: last,
-                        username: username,
-                        count: 0
-                    })
-                } :
-                {
-                    users: [
-                        {
-                            id: length+1,
-                            first: first,
-                            last: last,
-                            username: username,
-                            count: 0
-                        }
-                    ]
-                }
-        })
+    updateUsersList = (user) => {
+        user.count = 0;
+        this.setState(currState => ({
+            users: [...currState.users, user],
+        }));
     }
 
     checkUserNameExists = username => (
         this.state.users.find(user => (
             user.username === username
         ))
-    ) 
+    )
 
     render() {
         return (
