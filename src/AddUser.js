@@ -44,7 +44,6 @@ class AddUser extends Component {
     )
 
     render() {
-        console.log(this.state);
         const { first, last, username } = this.state.user;
         return (
             <form onSubmit={this.addUser}>
