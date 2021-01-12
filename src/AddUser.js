@@ -27,7 +27,14 @@ class AddUser extends Component {
         e.preventDefault();
         if (!this.props.checkUserNameExists(this.state.user.username)) {
             this.props.updateUsersList(this.state.user);
-            
+            this.setState(prevState => ({
+                user: {
+                    first: '',
+                    last: '',
+                    username: '',
+                },
+                userExists: false
+            }));
         } else {
             this.setState(prevState => ({
                 userExists: true
